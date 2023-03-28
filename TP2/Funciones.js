@@ -28,11 +28,19 @@ function AgregarTareas() {
 
 
 function RefrescarPantalla(){
+
     document.querySelector("#listado").innerHTML = "";
 
     ListaTareas.map(item=>{
         document.querySelector("#listado").innerHTML += `
-        <li>${item.titulo}</li>
+        <input type="checkbox">${item.titulo}</input>
+        <br>
         `;
+       
     })
+}
+
+function CambiarEstado(id) {
+    
+    
 }
